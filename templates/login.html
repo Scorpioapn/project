@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <h2 class="text-center">Welcome To Flexi Modern Team Evaluation System</h2>
+    <form action="{{ url_for('login') }}" method="post" class="mt-4 border p-4 bg-light shadow">
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your zid email address" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Log In</button>
+        <p class="text-center mt-3"><a href="{{ url_for('forgot_password') }}">Forgot your password?</a></p>
+        <p class="text-center mt-3">Don’t have an account? <a href="{{ url_for('register') }}">Register here</a></p>
+    </form>
+  </div>
+</div>
+{% endblock %}

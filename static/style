@@ -1,0 +1,171 @@
+/* Basic styles */
+body {
+    background: #1d1f21; /* Dark background color */
+    color: #f8f8f2; /* Light text color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h2 {
+    color: #f8f8f2;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #c5c8c6;
+}
+
+/* Container styles */
+.container {
+    margin-top: 50px;
+}
+
+/* Form styles */
+form {
+    background: #282a36; /* Dark form background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+    color: #8be9fd;
+    font-size: 16px;
+}
+
+.form-control {
+    background: #44475a; /* Dark input background */
+    border: 1px solid #6272a4; /* Border color */
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: #50fa7b; /* Focus border color */
+    box-shadow: 0 0 5px #50fa7b;
+}
+
+.form-control::placeholder {
+    color: #6272a4;
+}
+
+/* Button styles */
+button, .btn {
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #6272a4;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #50fa7b;
+    color: #282a36;
+}
+
+/* Alert styles */
+.alert {
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.alert-warning {
+    background-color: #ffb86c;
+    color: #282a36;
+}
+
+.alert-success {
+    background-color: #50fa7b;
+    color: #282a36;
+}
+
+.alert-danger {
+    background-color: #ff5555;
+    color: #ffffff;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #44475a; /* Dark navbar background */
+    border-bottom: 2px solid #6272a4;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #8be9fd;
+}
+
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+    color: #50fa7b;
+}
+
+/* Footer styles */
+footer {
+    background-color: #44475a;
+    padding: 20px;
+    text-align: center;
+    color: #8be9fd;
+    border-top: 2px solid #6272a4;
+    margin-top: 50px;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.text-danger {
+    color: #ff5555 !important;
+}
+
+.text-success {
+    color: #50fa7b !important;
+}
+
+.text-warning {
+    color: #ffb86c !important;
+}
+
+/* Link styles */
+a {
+    color: #8be9fd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #50fa7b;
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 30px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 15px;
+    }
+}
